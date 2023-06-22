@@ -1,0 +1,89 @@
+#prduct_border{
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#container_img{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+   font-family: poppins;
+    align-items: center;
+    
+}
+#container_img img{
+   margin: 5px;
+   margin-top: 2px;
+}
+
+#container{
+    display: flex;
+    border: 2px solid black;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+.Privacy_div{
+    display: flex;
+
+}
+.Privacy_div img{
+    width: 20px;
+    height: 20px;
+}
+.payment_div{
+    display: flex;
+
+}
+.payment_div img{
+  width: 20px;
+  height: 20px;
+
+}
+#div_images-footer img{
+   width: 80px;
+   margin: 10px;
+}
+
+#Shiping_img-div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+#Shiping_img-div p{
+    margin-top: 5px;
+}
+#Shiping_img-div img{
+    width: 80px;
+
+
+}
+footer{
+    background-color: gainsboro;
+}
+#FooterFirstDiv{
+    width: 60%;
+    font-family: poppins;
+   
+   
+    text-align: center;
+    margin: auto;
+}
+#FooterFirstDiv img{
+    width: 40px;
+    /* height: 50px; */
+}
+#rights{
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+       
+    }
+    body{
+        /* background-image: url('https://wallpaperaccess.com/full/2481214.jpg'); */
+
+        /* background-image: url('https://e0.pxfuel.com/wallpapers/47/641/desktop-wallpaper-nike-air-jordan-1-retro-mids-sneaker-drip-shoes.jpg'); */
+        /* background-image: url('https://wallpapercave.com/dwp1x/wp5821514.jpg'); */
+        /* background-size: 50% 50%; */
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .form{
+        width: 400px;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        /* background-color: rgb(240, 240, 240); */
+        font-family: poppins;
+        text-transform: uppercase;
+        padding: 20px;
+
+    }
+    .form span{
+        color: red;
+        text-transform: lowercase;
+        font-size: 12px;
+    }
+    .form input{
+        width: 90%;
+        margin-bottom: 10px;
+        height: 40px;
+    }
+    #Register_but{
+        width: 100%;
+        background-color: red;
+        color: white;
+        border: none;
+        height: 50px;
+        font-size: large;
+        cursor: pointer;
+    }
+    #Lobo-bar{
+    /* width: 60%; */
+    text-align: center;
+     font-family: 'Teko', sans-serif;
+     color: darkorange;
+     font-size: larger;
+     margin-top: 50px;
+}
+</style>
+<body>
+    <div id="Lobo-bar"><h1>SNEAKERSMARKET</h1></div>
+    <div class="form">
+        
+        <div>
+            <label for="">Name</label> <br>
+            <input type="text" id="Regist-name"> <br> 
+            <span id="nameVal"></span>
+        </div>
+
+       <div>
+            <label for="">Phone Number</label> <br>
+            <input type="number" id="Regist-phone"> <br> 
+            <span id="PhoneVal"></span>
+       </div>
+
+       <div>
+            <label for="">Email</label> <br>
+            <input type="email" id="Regist-Email"> <br> 
+            <span id="EmailVal"></span>
+       </div>
+
+       <div>
+            <label for="">PASSWORD </label> <br>
+            <input type="text" id="Regist-pass"> <br> 
+            <span id="PasswdVal"></span>
+       </div>
+
+       <div>
+            <label for="">CONFIRM PASSWORD </label> <br>
+            <input type="password" id="Regist-Conf-Passwd"> <br>
+            <span id="PasswdValCheck"></span>
+       </div>
+
+
+       <button id="Register_but" onclick="REGISTERTOSNEAKER()">REGISTER TO SNEAKERSMARKET</button>
+
+
+    </div>
+
+    <script src="../javascript/register.js"></script>
+</body>
+</html>

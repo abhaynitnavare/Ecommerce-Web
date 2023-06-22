@@ -1,0 +1,129 @@
+#Buy-product{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    margin: auto;
+}
+.product{
+    text-align: center;
+    border: 2px solid black;
+}
+.product p{
+    margin-bottom: 2px;
+
+}
+.product img{
+    height: 220px;
+    width: 320px;
+    
+}
+#Wish-flex{
+    display: flex;
+    justify-content: center;
+}
+#Wish-flex img{
+    
+    width: 25px;
+    height: 25px;
+}
+#Size-DIv{
+    display: flex;
+    justify-content: center;
+    /* width: 90%; */
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.8s;
+    
+
+}
+#Size-DIv div{
+   margin-left: 7px;
+   margin-right: 7px;
+   cursor:pointer ;
+   height: fit-content;
+   transition: 0.8s;
+}
+.Size:hover{
+    border: 1px solid black;
+    transform: scale(1.1);
+    transition: 0.8s;
+
+}
+#ADD_TO_BAG{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 5px;
+    transition: 0.5s;
+    width: 150px;
+}
+ #ADD_TO_BAG:hover{
+    transform: scalex(1.1);
+    background-color: darkgreen;
+
+}
+#Wish-flex{
+    margin-top: 8px;
+}
+#Wish-flex:hover {
+    color: red;
+    
+}
+.price_CLASS{
+    font-family:'Chewy' ;
+}
+#heading_Product{
+    justify-content: center;
+    text-align: center;
+    
+    font-family: 'Pacifico', cursive;
+}
+
+
+#SEction_two_product{
+    margin-top: 20px;
+    
+}
+#Buy-product .product{
+    box-shadow: 1px 0px 3px 1px  ;
+}
+
+#shoesCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.Scard{
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    font-family: poppins;
+    font-size: 10px;
+    border: 2px solid black;
+    box-shadow: 0 50px 50px #757676;
+    margin-bottom: 20px;
+    
+
+}
+
+.Scard img{
+    width:100%;
+    height: 150px;
+}
+.Add_CART{
+    padding: 10px;
+    color: rgb(255, 255, 254);
+    border: none;
+    font-size: 15px;
+    background-color: rgb(220, 13, 13);
+    margin-bottom: 10px;
+}
+
+.Scard h2:nth-child(2){
+    color: red;
+}

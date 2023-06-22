@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAKERSMARKET.Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        background-image: url('https://images4.alphacoders.com/991/thumb-1920-991768.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-size: cover;
+
+    }
+    .Localform {
+        font-family: 'Poppins';
+        margin-top: 50px;
+    }
+
+    #logi_space {
+        width: 350px;
+        padding: 10px;
+        justify-content: center;
+        margin: auto;
+        font-family: 'Poppins';
+        /* background-color: rgb(248, 245, 245); */
+
+    }
+
+    #UName {
+        width: 90%;
+        height: 40px;
+    }
+
+    #UPass {
+        width: 90%;
+        height: 40px;
+    }
+
+    #Chekbox_id {
+        display: flex;
+        font-size: 15px;
+    }
+
+    #Chekbox_id input {
+        width: 25px;
+        cursor: pointer;
+
+    }
+
+    #Sign-FLex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #Signin_but {
+        width: 100%;
+        background-color: red;
+        color: white;
+        height: 45px;
+        cursor: pointer;
+        font-size: larger;
+        border: none;
+
+    }
+
+    #NEW_USEBUT {
+        background-color: rgb(24, 140, 228);
+        width: 30%;
+        color: white;
+        height: 40px;
+        font-size: 17px;
+        margin-top: 10px;
+        cursor: pointer;
+
+    }
+
+    
+    #Lobo-bar {
+        
+        text-align: center;
+        font-family: 'Teko', sans-serif;
+        color: darkorange;
+        font-size: larger;
+    }
+
+    #NameVAl {
+        color: red;
+        font-size: 12px;
+
+    }
+
+    #PAssVAl {
+        color: red;
+        font-size: 12px;
+
+    }
+
+    #Signin_but {
+        font-weight: 600;
+        display: inline-block;
+        position: relative;
+        border: 3px solid #fff;
+        padding: 15px 60px;
+        font-size: 16px;
+    }
+
+    #Signin_but::after,
+    #Signin_but::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        transition: .5s;
+    }
+
+    #Signin_but::after {
+        top: -3px;
+        left: -3px;
+        border-top: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+
+    #Signin_but::before {
+        bottom: -3px;
+        right: -3px;
+        border-bottom: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+
+    #Signin_but:hover {
+        color: #f1f4f6;
+        cursor: pointer;
+    }
+
+    #Signin_but:hover::after,
+    #Signin_but:hover::before {
+        width: calc(50% + 3px);
+        height: calc(50% + 3px);
+        border-color: #080808;
+    }
+</style>
+
+<body>
+    
+    <div class="Localform">
+        <div id="Lobo-bar">
+            <h1>SNEAKERSMARKET</h1>
+        </div>
+        <div id="logi_space">
+            <h3>SIGN IN TO YOUR ACCOUNT</h3>
+            <p>Welcome back!
+                If you already have an account with us, please sign in.</p>
+
+            <div>
+                <label for="">Name</label> <br>
+                <input type="text" id="UName"> <br>
+                <span id="NameVAl"></span>
+            </div>
+
+            <div>
+                <label for="">Password</label><br>
+                <input type="password" id="UPass"> <br>
+                <span id="PAssVAl"></span>
+            </div>
+
+            <div id="Sign-FLex">
+                <div id="Chekbox_id">
+                    <input type="checkbox" name="st" id="chkvalue">
+                    <p>Remember Me</p>
+                    <span id="chkval"></span>
+
+                </div>
+                <a href="">Forget Paswword</a>
+            </div>
+            <button onclick="logintoapp()" id="Signin_but">Signin</button>
+
+            <div>
+                <button id="NEW_USEBUT"><a href="../index1.html/Register.html">New User</a></button>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/login.js"></script>
+</body>
+
+</html>

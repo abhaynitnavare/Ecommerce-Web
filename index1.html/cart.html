@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNEAKERSMARKET</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sriracha&family=Teko&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/FOTTER.CSS">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+  <style>
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    ul li {
+        list-style-type: none;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="Lobo-bar">
+      <h1>SNEAKERSMARKET</h1>
+    </div>
+    <div id="ul-bar">
+      <ul class="header-li-one">
+        <h2><span id="acDetails">Welcome</span> <span id="User"></span></h2>
+        <a  id="loginHide" onclick="login()">Login</a>
+        <!-- href="../index1.html/login.html" -->
+      </ul>
+        <ul class=" header-li-two"> <img src="" alt="">My Orders
+      </ul>
+      <ul class="header-li-three">Wishlist
+      </ul>
+      <ul id="Viewcartid" class="shopping">
+       <a href="./cart.html">
+        View Cart
+        <span id="Cart-span" >0</span>
+       </a>
+      </ul>
+
+      <button id="logoutBtn" onclick="outfun()">Logout</button>
+    </div>
+
+    <div id="bgMenu"> </div>
+    <div class="hamburgerMenu" id="hMenu" onclick="menu()">
+      <div class="conBar" id="bar1"></div>
+      <div class="conBar" id="bar2"></div>
+      <div class="conBar" id="bar3"></div>
+    </div>
+
+
+
+  </header>
+
+
+  <ul id="productList">
+
+  </ul>
+
+
+
+  <script src="../javascript/cartProd.js"></script>
+  </body>
+
+  </html>

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNEAKERSMARKET</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sriracha&family=Teko&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/FOTTER.CSS">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="Lobo-bar">
+      <h1>SNEAKERSMARKET</h1>
+    </div>
+    <div id="ul-bar">
+      <ul class="header-li-one">
+        <h2><span id="acDetails">Welcome</span> <span id="User"></span></h2>
+        <a  id="loginHide" onclick="login()">Login</a>
+        <!-- href="../index1.html/login.html" -->
+      </ul>
+      <!-- <ul class="Cat" onclick="Category()"> <a>Category</a>
+          
+        <li style="display: none;">
+          <ul>
+            <li class="name" id="one-bar" onclick="Show()">
+              <span class="span-one">NEW</span>
+              <ul>
+                  <li>
+                    <ul>
+                      <h6>Women</h6>
+                      <li>Shoes </li>
+                      <li>Bags </li>
+                      <li>Accessories </li>
+                      <li>Show all </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <h6>Men</h6>
+                      <li>Shoes</li>
+                      <li>Accessories</li>
+                      <li>Show all</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <h6>KIDS</h6>
+                      <li>Shoes</li>
+                      <li>Show all</li>
+                    </ul>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+        </li> 
+
+        <li style="display: none;">
+          <ul>
+            <li class="name" onmouseover="WOMenbut()" onmouseleave="Womenleav()"><span class="span-one">WOMEN</span>>
+              <ul>
+                <li>
+                  <ul>
+                    <h6>SHOES</h6>
+                    <li>Causal shoes</li>
+                    <li>Chappals</li>
+                    <li>Flipflop</li>
+                    <li>Sandals</li>
+                    <li>Sports</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <h6> HEEL TYPE</h6>
+                    <li>Block</li>
+                    <li>Cone</li>
+                    <li>Platform</li>
+                    <li>Show all</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <h6>Bags</h6>
+                    <li>HandBags</li>
+                    <li>Wallet& Clutches</li>
+                    <li>Show all</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li style="display: none;">
+          <ul>
+            <li class="name" id="main_third" onmouseover="menbut()" onmouseleave="menleav()"> <span
+              class="span-one">MEN</span>>
+              <ul>
+                <li>
+                  <UL>
+                    <h6>SHOES</h6>
+                    <li>Causal shoes</li>
+                    <li>Chappals</li>
+                    <li>Flipflop</li>
+                    <li>Sandals</li>
+                    <li>Sports</li>
+                  </UL>
+                </li>
+                <li>
+                  <ul>
+                    <h6>Accessories</h6>
+                    <li>Bags</li>
+                    <li>Belts</li>
+                    <li>Show all</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li style="display: none;">
+          <ul>
+            <li class="name" onmouseover="Kidsbut()" onmouseleave="kidsleave()"> <span class="span-one">KIDS</span>>
+              <ul>
+                <li>
+                  <ul>
+                    <h6>FEATURED</h6>
+                    <li>New Arrivals</li>
+                    <li>Best Seller</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <h6>SHOES</h6>
+                    <li>Boys</li>
+                    <li>Girls</li>
+                    <li>School</li>
+                    <li>Show all</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul> -->
+        <ul class=" header-li-two"> <img src="" alt="">My Orders
+      </ul>
+      <ul class="header-li-three">Wishlist
+      </ul>
+      <ul id="Viewcartid" class="shopping">
+       <a href="./cart.html">
+        View Cart
+        <span id="Cart-span" >0</span>
+       </a>
+      </ul>
+
+      <button id="logoutBtn" onclick="outfun()">Logout</button>
+    </div>
+
+    <div id="bgMenu"> </div>
+    <div class="hamburgerMenu" id="hMenu" onclick="menu()">
+      <div class="conBar" id="bar1"></div>
+      <div class="conBar" id="bar2"></div>
+      <div class="conBar" id="bar3"></div>
+    </div>
+
+
+
+  </header>
+
+<!-- login animation -->
+<div class="Localform" id="Localform">
+  <div id="logi_space" class="animate">
+      <h3>SIGN IN TO YOUR ACCOUNT</h3>
+      <p>Welcome back!
+          If you already have an account with us, please sign in.</p>
+          <img src="" alt="">
+          <img class="avtimg" src='../Images/mysterious-mafia-man-smoking-cigarette_52683-34828-removebg-preview.png' alt="">
+
+      <div>
+          <label for="">Name</label> <br>
+          <input type="text" id="UName"> <br>
+          <span id="NameVAl"></span>
+      </div>
+
+      <div>
+          <label for="">Password</label><br>
+          <input type="password" id="UPass"> <br>
+          <span id="PAssVAl"></span>
+      </div>
+
+      <div id="Sign-FLex">
+          <div id="Chekbox_id">
+              <input type="checkbox" name="st" id="chkvalue">
+              <p>Remember Me</p>
+              <span id="chkval"></span>
+
+          </div>
+          <a href="">Forget Paswword</a>
+      </div onclick='closeFun()'>
+      <button onclick="logintoapp()" id="Signin_but">Signin</button>
+       <div>
+        <img class="cancel-but" src="https://img.freepik.com/free-icon/multiply_318-350486.jpg?size=626&ext=jpg" alt="">
+       </div>
+      <div>
+          <button id="NEW_USEBUT"><a href="../index1.html/Register.html">New User</a></button>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <div id="After-Div">
+
+    <div id="Main-ol">
+      <!-- onmouseover="onname()" onmouseleave="leaveover()" -->
+      <div class="name" id="one-bar" onclick="Show()"><span class="span-one">
+          NEW</span>
+        <div id="First-id" class="First-li">
+          <ul>
+            <h6>Women</h6>
+            <li>Shoes </li>
+            <li>Bags </li>
+            <li>Accessories </li>
+            <li>Show all </li>
+          </ul>
+
+          <ul>
+            <h6>Men</h6>
+            <li>Shoes</li>
+            <li>Accessories</li>
+            <li>Show all</li>
+          </ul>
+          <ul>
+            <h6>KIDS</h6>
+            <li>Shoes</li>
+            <li>Show all</li>
+          </ul>
+        </div>
+        <button onclick="closebutton()" id="cancel-but">X</button>
+      </div>
+
+
+      <div class="name" onmouseover="WOMenbut()" onmouseleave="Womenleav()"><span class="span-one">WOMEN</span>
+        <div class="Second-li" id="Second-Id">
+          <UL>
+            <h6>SHOES</h6>
+            <li>Causal shoes</li>
+            <li>Chappals</li>
+            <li>Flipflop</li>
+            <li>Sandals</li>
+            <li>Sports</li>
+          </UL>
+
+          <ul>
+            <h6> HEEL TYPE</h6>
+            <li>Block</li>
+            <li>Cone</li>
+            <li>Platform</li>
+            <li>Show all</li>
+          </ul>
+
+          <ul>
+            <h6>Bags</h6>
+            <li>HandBags</li>
+            <li>Wallet& Clutches</li>
+            <li>Show all</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="name" id="main_third" onmouseover="menbut()" onmouseleave="menleav()"> <span
+          class="span-one">MEN</span>
+        <div class="Third-li" id="Third-ID">
+
+          <UL>
+            <h6>SHOES</h6>
+            <li>Causal shoes</li>
+            <li>Chappals</li>
+            <li>Flipflop</li>
+            <li>Sandals</li>
+            <li>Sports</li>
+          </UL>
+          <ul>
+            <h6>Accessories</h6>
+            <li>Bags</li>
+            <li>Belts</li>
+            <li>Show all</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="name" onmouseover="Kidsbut()" onmouseleave="kidsleave()"> <span class="span-one">KIDS</span>
+        <li class="Fourth-li" id="Fourth-ID">
+          <ul>
+            <h6>FEATURED</h6>
+            <li>New Arrivals</li>
+            <li>Best Seller</li>
+          </ul>
+
+          <ul>
+            <h6>SHOES</h6>
+            <li>Boys</li>
+            <li>Girls</li>
+            <li>School</li>
+            <li>Show all</li>
+          </ul>
+        </li>
+      </div>
+
+      <div class="name">
+        <input type="search" placeholder="Search">
+        <img src="https://cdn-icons-png.flaticon.com/128/2811/2811806.png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="carouselExampleInterval" class="carousel slide slide-size" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://wallpaperset.com/w/full/7/7/d/66277.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpaperaccess.com/full/1076764.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpaperaccess.com/full/6324752.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://footwearnews.com/wp-content/uploads/2016/05/adidasp-originals-nmd-r1-white-1.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Images-Download-Adidas-Shoes-Wallpapers-HD.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpaperaccess.com/full/680075.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section>
+    <h2 id="heading_Product">Men</h2>
+    <div id="Buy-product">
+      <div class="product" id="productone1">
+        <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG" onclick="AddTobag()"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+
+
+      <div class="product" id="productone2">
+        <img src="https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 1900.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+
+      </div>
+
+      <div class="product" id="productone3">
+        <img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS"> MRP ₹ 1900.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+
+
+      <div class="product" id="productone4">
+        <img src="https://images.pexels.com/photos/847371/pexels-photo-847371.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 1900.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Second line starts -->
+
+  <section id="SEction_two_product">
+    <div id="Buy-product">
+
+      <div class="product" id="productone5">
+        <img src="https://images.pexels.com/photos/1266445/pexels-photo-1266445.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone6">
+        <img
+          src="https://images.pexels.com/photos/7524994/pexels-photo-7524994.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load0"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone7">
+
+        <img
+          src="https://images.pexels.com/photos/12837963/pexels-photo-12837963.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone8">
+        <img
+          src="https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Third Prodct line -->
+
+  <section id="SEction_two_product">
+    <div id="Buy-product">
+
+      <div class="product" id="productone9">
+        <img
+          src="https://images.pexels.com/photos/10112912/pexels-photo-10112912.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone10">
+        <img
+          src="https://images.pexels.com/photos/4252948/pexels-photo-4252948.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone11">
+
+        <img
+          src="https://images.pexels.com/photos/3830139/pexels-photo-3830139.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone12">
+        <img
+          src="https://images.pexels.com/photos/14188882/pexels-photo-14188882.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fourth line product for Women -->
+
+  <section id="SEction_two_product">
+    <h2 id="heading_Product">Women</h2>
+    <div id="Buy-product">
+
+      <div class="product" id="productone9">
+        <img src="https://images.pexels.com/photos/6153367/pexels-photo-6153367.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone10">
+        <img
+          src="https://images.pexels.com/photos/1478441/pexels-photo-1478441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone11">
+
+        <img
+          src="https://images.pexels.com/photos/4767907/pexels-photo-4767907.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone12">
+        <img
+          src="https://images.pexels.com/photos/4252950/pexels-photo-4252950.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- fifth product list -->
+  <section id="SEction_two_product">
+
+    <div id="Buy-product">
+
+      <div class="product" id="productone13">
+        <img
+          src="https://images.pexels.com/photos/11324524/pexels-photo-11324524.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone14">
+        <img
+          src="https://images.pexels.com/photos/10924183/pexels-photo-10924183.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone15">
+
+        <img
+          src="https://images.pexels.com/photos/4379226/pexels-photo-4379226.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+      <div class="product" id="productone16">
+        <img
+          src="https://images.pexels.com/photos/1750045/pexels-photo-1750045.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+        <p>POWER</p>
+        <p class="price_CLASS">MRP ₹ 2500.00</p>
+        <p>Available sizes</p>
+        <div id="Size-DIv">
+          <div class="Size" id="sizes1">6</div>
+          <div class="Size" id="sizes2">7</div>
+          <div class="Size" id="sizes3">8</div>
+          <div class="Size" id="sizes4">9</div>
+          <div class="Size" id="sizes5">10</div>
+          <div class="Size" id="sizes6">11</div>
+        </div>
+        <button id="ADD_TO_BAG"> ADD TO BAG </button>
+        <div id="Wish-flex">
+          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
+          <p>ADD TO WISHLIST</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- shiping information -->
+  <div id="prduct_border"></div>
+
+  <div id="Shiping_img-div">
+    <div id="Shipin-IMG"> <img src="https://cdn-icons-png.flaticon.com/128/411/411763.png" alt="">
+      <p>FREE SHIPPING
+        ON ALL ORDERS
+      </p>
+    </div>
+    <div>
+      <img src="https://static.thenounproject.com/png/5478593-200.png" alt="">
+      <p>NO QUESTIONS
+        ASKED RETURNS
+      </p>
+
+    </div>
+    <div>
+      <img src="https://static.thenounproject.com/png/3661029-200.png" alt="">
+      <p>ACTIVE STORE NEAR YOU</p>
+    </div>
+
+    <div>
+      <img src="https://static.thenounproject.com/png/5044703-200.png" alt="">
+      <p>SNEAKERSMARKET BENEFITS</p>
+    </div>
+
+  </div>
+
+  <div id="container">
+
+    <div id="container_img">
+      <div class="Privacy_div">
+        <img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/privacy-2531832-2119367.png" alt="">
+        <p>Privacy protected</p>
+      </div>
+
+      <div class="payment_div">
+        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/privacy-1768094-1505160.png?f=avif&w=128" alt="">
+        <p>Secure payment</p>
+      </div>
+
+      <div class="Para_div">
+        <p>Payment methods available for you</p>
+      </div>
+
+    </div>
+
+
+    <div id="div_images-footer">
+
+      <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/cash-on-delivery-2069119-1745275.png?f=avif&w=128"
+        alt="">
+      <img
+        src="https://cdn.iconscout.com/icon/free/png-256/free-payment-rupay-card-pay-bank-transaction-51318.png?f=avif&w=128"
+        alt="">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-upi-2085056-1747946.png?f=avif&w=128" alt="">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-visa-3-226460.png?f=avif&w=128" alt="">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-master-card-4-842898.png?f=avif&w=128" alt="">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-maestro-5-675721.png?f=avif&w=128" alt="">
+    </div>
+
+  </div>
+
+  <footer>
+    <div id="FooterFirstDiv">
+      <p>FOLLOW US</p>
+      <div>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-facebook-1464532-1239443.png?f=avif&w=128" alt="">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-1851695-1570217.png?f=avif&w=128" alt="">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-youtube-1464540-1239451.png?f=avif&w=128" alt="">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-1464537-1239448.png?f=avif&w=128" alt="">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-linkedin-1796350-1524231.png?f=avif&w=128" alt="">
+      </div>
+    </div>
+
+    <div id="rights">
+      <p>@2023</p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+  <div class="" id="shoesCard">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="module" src="../javascript/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+    <script  src="../javascript/login.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+
