@@ -30,7 +30,7 @@
     <div id="ul-bar">
       <ul class="header-li-one">
         <h2><span id="acDetails">Welcome</span> <span id="User"></span></h2>
-        <a  id="loginHide" onclick="login()">Login</a>
+        <a id="loginHide" onclick="login()">Login</a>
         <!-- href="../index1.html/login.html" -->
       </ul>
       <!-- <ul class="Cat" onclick="Category()"> <a>Category</a>
@@ -158,70 +158,81 @@
           </ul>
         </li>
       </ul> -->
-        <ul class=" header-li-two"> <img src="" alt="">My Orders
+      <ul class=" header-li-two"> <img src="" alt="">My Orders
       </ul>
       <ul class="header-li-three">Wishlist
       </ul>
       <ul id="Viewcartid" class="shopping">
-       <a href="./cart.html">
-        View Cart
-        <span id="Cart-span" >0</span>
-       </a>
+        <a onclick="cartbar()">
+          View Cart
+          <span id="Cart-span">0</span>
+        </a>
       </ul>
 
       <button id="logoutBtn" onclick="outfun()">Logout</button>
     </div>
 
-    <div id="bgMenu"> </div>
+    <!-- <div id="bgMenu"> </div>
     <div class="hamburgerMenu" id="hMenu" onclick="menu()">
       <div class="conBar" id="bar1"></div>
       <div class="conBar" id="bar2"></div>
       <div class="conBar" id="bar3"></div>
-    </div>
+    </div> -->
 
 
 
   </header>
 
-<!-- login animation -->
-<div class="Localform" id="Localform">
-  <div id="logi_space" class="animate">
+  <div id="cartslide">
+    <p>Cart is Empty</p>
+
+    <div onclick="closefun()" id="closis">
+      
+      <button class="Clonfunct">X</button>
+    </div>
+  </div>
+
+
+  <!-- login animation -->
+  <div class="Localform" id="Localform">
+    <div id="logi_space" class="animate">
       <h3>SIGN IN TO YOUR ACCOUNT</h3>
       <p>Welcome back!
-          If you already have an account with us, please sign in.</p>
-          <img src="" alt="">
-          <img class="avtimg" src='../Images/mysterious-mafia-man-smoking-cigarette_52683-34828-removebg-preview.png' alt="">
+        If you already have an account with us, please sign in.</p>
+      <img src="" alt="">
+      <img class="avtimg" src='../Images/mysterious-mafia-man-smoking-cigarette_52683-34828-removebg-preview.png'
+        alt="">
 
       <div>
-          <label for="">Name</label> <br>
-          <input type="text" id="UName"> <br>
-          <span id="NameVAl"></span>
+        <label for="">Name</label> <br>
+        <input type="text" id="UName"> <br>
+        <span id="NameVAl"></span>
       </div>
 
       <div>
-          <label for="">Password</label><br>
-          <input type="password" id="UPass"> <br>
-          <span id="PAssVAl"></span>
+        <label for="">Password</label><br>
+        <input type="password" id="UPass"> <br>
+        <span id="PAssVAl"></span>
       </div>
 
       <div id="Sign-FLex">
-          <div id="Chekbox_id">
-              <input type="checkbox" name="st" id="chkvalue">
-              <p>Remember Me</p>
-              <span id="chkval"></span>
+        <div id="Chekbox_id">
+          <input type="checkbox" name="st" id="chkvalue">
+          <p>Remember Me</p>
+          <span id="chkval"></span>
 
-          </div>
-          <a href="">Forget Paswword</a>
-      </div onclick='closeFun()'>
+        </div>
+        <a href="">Forget Paswword</a>
+      </div onclick='closeFun()'> 
       <button onclick="logintoapp()" id="Signin_but">Signin</button>
-       <div>
-        <img class="cancel-but" src="https://img.freepik.com/free-icon/multiply_318-350486.jpg?size=626&ext=jpg" alt="">
-       </div>
       <div>
-          <button id="NEW_USEBUT"><a href="../index1.html/Register.html">New User</a></button>
+        <img class="cancel-but" src="https://img.freepik.com/free-icon/multiply_318-350486.jpg?size=626&ext=jpg" alt="">
       </div>
+      <div>
+        <button id="NEW_USEBUT"><a href="../index1.html/Register.html">New User</a></button>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
@@ -372,472 +383,16 @@
     </button>
   </div>
 
-  <section>
-    <h2 id="heading_Product">Men</h2>
-    <div id="Buy-product">
-      <div class="product" id="productone1">
-        <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG" onclick="AddTobag()"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
+
+  <!-- cards  -->
+
+  <div class="" id="shoesCard">
+
+  </div>
 
 
-      <div class="product" id="productone2">
-        <img src="https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 1900.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-
-      </div>
-
-      <div class="product" id="productone3">
-        <img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS"> MRP ₹ 1900.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
 
 
-      <div class="product" id="productone4">
-        <img src="https://images.pexels.com/photos/847371/pexels-photo-847371.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 1900.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Second line starts -->
-
-  <section id="SEction_two_product">
-    <div id="Buy-product">
-
-      <div class="product" id="productone5">
-        <img src="https://images.pexels.com/photos/1266445/pexels-photo-1266445.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone6">
-        <img
-          src="https://images.pexels.com/photos/7524994/pexels-photo-7524994.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load0"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone7">
-
-        <img
-          src="https://images.pexels.com/photos/12837963/pexels-photo-12837963.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone8">
-        <img
-          src="https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Third Prodct line -->
-
-  <section id="SEction_two_product">
-    <div id="Buy-product">
-
-      <div class="product" id="productone9">
-        <img
-          src="https://images.pexels.com/photos/10112912/pexels-photo-10112912.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone10">
-        <img
-          src="https://images.pexels.com/photos/4252948/pexels-photo-4252948.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone11">
-
-        <img
-          src="https://images.pexels.com/photos/3830139/pexels-photo-3830139.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone12">
-        <img
-          src="https://images.pexels.com/photos/14188882/pexels-photo-14188882.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Fourth line product for Women -->
-
-  <section id="SEction_two_product">
-    <h2 id="heading_Product">Women</h2>
-    <div id="Buy-product">
-
-      <div class="product" id="productone9">
-        <img src="https://images.pexels.com/photos/6153367/pexels-photo-6153367.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone10">
-        <img
-          src="https://images.pexels.com/photos/1478441/pexels-photo-1478441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone11">
-
-        <img
-          src="https://images.pexels.com/photos/4767907/pexels-photo-4767907.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone12">
-        <img
-          src="https://images.pexels.com/photos/4252950/pexels-photo-4252950.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- fifth product list -->
-  <section id="SEction_two_product">
-
-    <div id="Buy-product">
-
-      <div class="product" id="productone13">
-        <img
-          src="https://images.pexels.com/photos/11324524/pexels-photo-11324524.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone14">
-        <img
-          src="https://images.pexels.com/photos/10924183/pexels-photo-10924183.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone15">
-
-        <img
-          src="https://images.pexels.com/photos/4379226/pexels-photo-4379226.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-      <div class="product" id="productone16">
-        <img
-          src="https://images.pexels.com/photos/1750045/pexels-photo-1750045.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          alt="">
-        <p>POWER</p>
-        <p class="price_CLASS">MRP ₹ 2500.00</p>
-        <p>Available sizes</p>
-        <div id="Size-DIv">
-          <div class="Size" id="sizes1">6</div>
-          <div class="Size" id="sizes2">7</div>
-          <div class="Size" id="sizes3">8</div>
-          <div class="Size" id="sizes4">9</div>
-          <div class="Size" id="sizes5">10</div>
-          <div class="Size" id="sizes6">11</div>
-        </div>
-        <button id="ADD_TO_BAG"> ADD TO BAG </button>
-        <div id="Wish-flex">
-          <img src="https://cdn.icon-icons.com/icons2/38/PNG/96/like_favorite_heart_5759.png" alt="">
-          <p>ADD TO WISHLIST</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- shiping information -->
   <div id="prduct_border"></div>
@@ -918,7 +473,6 @@
       <p>@2023</p>
     </div>
   </footer>
-  
 
 
 
@@ -926,41 +480,14 @@
 
 
 
-
-  <div class="" id="shoesCard">
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script type="module" src="../javascript/main.js"></script>
+  <script src="../javascript/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-
-    <script  src="../javascript/login.js"></script>
-
-
-
+  <script src="../javascript/login.js"></script>
 </body>
 
 </html>
-
-
-
