@@ -53,6 +53,9 @@ let acDetails = document.getElementById('acDetails')
 let acUser = document.getElementById('User')
 let logIn = document.getElementById('loginHide')
 let logOut = document.getElementById('logoutBtn')
+var modal = document.getElementById('Localform');
+modal.style.display ="none"
+
 // let Register = document.getElementById('Register_but')
 
 
@@ -180,12 +183,10 @@ function Category() {
 }
 
 function login() {
-    document.getElementById('Localform').style.display = 'block'
+    modal.style.display = 'flex'
     console.log('hiii stop')
 
-
 }
-var modal = document.getElementById('Localform');
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = 'none'
@@ -204,8 +205,8 @@ let sneakes_Shoes = [
         "price": 2500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-    
-        "Reviews":"Reviews(46)"
+
+        "Reviews": "Reviews(46)"
     },
     {
         "id": 2,
@@ -214,8 +215,8 @@ let sneakes_Shoes = [
         "price": 1500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
         "id": 3,
@@ -224,8 +225,8 @@ let sneakes_Shoes = [
         "price": 7500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -235,8 +236,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -246,8 +247,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -257,8 +258,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -268,8 +269,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -279,8 +280,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -290,8 +291,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -301,8 +302,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -312,8 +313,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -323,8 +324,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -334,8 +335,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -345,8 +346,8 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
-        
+        "Reviews": "Reviews(46)"
+
     },
     {
 
@@ -356,18 +357,18 @@ let sneakes_Shoes = [
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
+        "Reviews": "Reviews(46)"
 
     },
     {
 
         "id": 16,
-        "name":"SPEED",
+        "name": "SPEED",
         "img": "https://images.pexels.com/photos/12837963/pexels-photo-12837963.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         "price": 5500,
         "sizes": [6, 7, 8, 9, 10],
         "img1": "https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg",
-        "Reviews":"Reviews(46)"
+        "Reviews": "Reviews(46)"
     }
 
 
@@ -380,7 +381,7 @@ let card = ""
 let i = 1
 function getDetails() {
     sneakes_Shoes.forEach((data) => {
-        console.log(data)
+        // console.log(data)
         card += `
             <div class="Scard" id="cards-${i}">
                     <img class="IMg"  src=${data.img} >
@@ -413,17 +414,19 @@ getDetails()
 
 let backet = []
 let localStg = localStorage.getItem('cart-list')
-function addtoCart(val) {
+let type = typeof(localStg)
 
-    if (localStg == "") {
+function addtoCart(val) {
+    console.log(type)
+
+    if (type == "string") {
         backet.push(val)
         localStorage.setItem('cart-list', backet)
     }
 
     else {
         backet = localStorage.getItem('cart-list').split(",")
-        console.log(typeof (backet))
-        console.log(val,backet)
+        console.log(backet)
 
         if(backet.includes(String(val))){
             alert('already exixt')
@@ -439,8 +442,10 @@ function addtoCart(val) {
 let CartSpan = document.getElementById('Cart-span')
 setInterval(() => {
     localStg = localStorage.getItem('cart-list')
-    if (localStg == "") {
-        let len = localStg.length
+    let type = typeof(localStg)
+    console.log(typeof(localStg))
+    if (type == "object") {
+        let len = 0
         CartSpan.innerText = len
     }
     else {
@@ -452,44 +457,58 @@ setInterval(() => {
 
 
 
+
 let CartBar = document.querySelector("#cartslide")
- CartBar.style.display='none'
- let clbutton = document.getElementsByClassName('Clonfunct')
- clbutton.style.display='none'
+CartBar.style.display = 'none'
+let clbutton = document.getElementsByClassName('Clonfunct')
+// clbutton.style.display = 'none'
+let bgclose = document.getElementById('blacbg')
+bgclose.style.display ="none"
+function bggclose(){
 
-function cartbar(){
+    if(bgclose.style.display="block"){
+        bgclose.style.display="none"
 
-    if(CartBar.style.display='none'){
-        CartBar.style.display='block'
-        CartBar.classList.add('tSlide')
-        console.log('Done')
-        
-        if(CartBar.className.includes('tSlide')){
-            console.log('task done')
-        }
-          
     }
-
-
-
-
+    CartBar.style.display='none'
+    bgclose.style.display='none'
 }
 
 
-function closefun(){
-    if (  clbutton.style.display=='none') {
-        console.log ('display none')
-       
+
+function cartbar() {
+
+    if (CartBar.style.display = 'none') {
+        CartBar.style.display = 'block'
+        CartBar.classList.add('tSlide')
+        bgclose.style.display="block"
+
+        console.log('Done')
+        if (CartBar.className.includes('tSlide')) {
+            console.log('task done')
+        }
+    }
+}
+
+
+function closefun() {
+    console.log('Cliked')
+    if (CartBar.style.display = "none") {
+        console.log('display none')
+        bgclose.style.display="none"
+
     }
     else {
-        clbutton.style.display=='none'
-        // CartBar.style.display=='none'
+       
+        CartBar.style.display = 'none'
+       
+        
         console.log('hiiiiiiiiii')
     }
     // CartBar.style.display=='none'
 }
 // cartbar()
-closefun()
+// closefun()
 
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko&display=swap" rel="stylesheet">
 </head>
@@ -12,19 +12,6 @@
     *{
         margin: 0px;
         padding: 0px;
-       
-    }
-    body{
-        /* background-image: url('https://wallpaperaccess.com/full/2481214.jpg'); */
-
-        /* background-image: url('https://e0.pxfuel.com/wallpapers/47/641/desktop-wallpaper-nike-air-jordan-1-retro-mids-sneaker-drip-shoes.jpg'); */
-        /* background-image: url('https://wallpapercave.com/dwp1x/wp5821514.jpg'); */
-        /* background-size: 50% 50%; */
-        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-repeat: no-repeat;
-
     }
     .form{
         width: 400px;
@@ -35,6 +22,7 @@
         font-family: poppins;
         text-transform: uppercase;
         padding: 20px;
+        background-color: antiquewhite;
 
     }
     .form span{
@@ -42,8 +30,11 @@
         text-transform: lowercase;
         font-size: 12px;
     }
+    .form div{
+        margin: auto;
+    }
     .form input{
-        width: 90%;
+        width: 99%;
         margin-bottom: 10px;
         height: 40px;
     }
@@ -55,6 +46,7 @@
         height: 50px;
         font-size: large;
         cursor: pointer;
+        margin-top: 20px;
     }
     #Lobo-bar{
     /* width: 60%; */
@@ -64,6 +56,10 @@
      font-size: larger;
      margin-top: 50px;
 }
+::-webkit-input-placeholder { /* Edge */
+  color: gray;
+  font-size: 15px;
+}
 </style>
 <body>
     <div id="Lobo-bar"><h1>SNEAKERSMARKET</h1></div>
@@ -71,31 +67,31 @@
         
         <div>
             <label for="">Name</label> <br>
-            <input type="text" id="Regist-name"> <br> 
+            <input type="text" id="Regist-name" placeholder="Name..."> <br> 
             <span id="nameVal"></span>
         </div>
 
        <div>
             <label for="">Phone Number</label> <br>
-            <input type="number" id="Regist-phone"> <br> 
+            <input type="number" id="Regist-phone" placeholder="Mobile no..."> <br> 
             <span id="PhoneVal"></span>
        </div>
 
        <div>
             <label for="">Email</label> <br>
-            <input type="email" id="Regist-Email"> <br> 
+            <input type="email" id="Regist-Email" placeholder="Email address..."> <br> 
             <span id="EmailVal"></span>
        </div>
 
        <div>
             <label for="">PASSWORD </label> <br>
-            <input type="text" id="Regist-pass"> <br> 
+            <input type="text" id="Regist-pass" placeholder="Enter your password..."> <br> 
             <span id="PasswdVal"></span>
        </div>
 
        <div>
             <label for="">CONFIRM PASSWORD </label> <br>
-            <input type="password" id="Regist-Conf-Passwd"> <br>
+            <input type="password" id="Regist-Conf-Passwd" placeholder="Confirm your password..."> <br>
             <span id="PasswdValCheck"></span>
        </div>
 

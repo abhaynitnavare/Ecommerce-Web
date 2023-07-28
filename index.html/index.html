@@ -163,7 +163,8 @@
       <ul class="header-li-three">Wishlist
       </ul>
       <ul id="Viewcartid" class="shopping">
-        <a onclick="cartbar()">
+        <!-- <a onclick="cartbar()"> -->
+          <a href="./cart.html">
           View Cart
           <span id="Cart-span">0</span>
         </a>
@@ -183,36 +184,41 @@
 
   </header>
 
+  <div id="blacbg" onclick="bggclose()"></div>
+
   <div id="cartslide">
-    <p>Cart is Empty</p>
+    <p>View Cart</p>
 
     <div onclick="closefun()" id="closis">
-      
+
       <button class="Clonfunct">X</button>
+    </div>
+    <div class="paybutton">
+      <div>Total</div>
+      <div>PayNOw</div>
     </div>
   </div>
 
 
   <!-- login animation -->
-  <div class="Localform" id="Localform">
+  <div class="Localform1" id="Localform">
     <div id="logi_space" class="animate">
-      <h3>SIGN IN TO YOUR ACCOUNT</h3>
-      <p>Welcome back!
-        If you already have an account with us, please sign in.</p>
-      <img src="" alt="">
-      <img class="avtimg" src='../Images/mysterious-mafia-man-smoking-cigarette_52683-34828-removebg-preview.png'
-        alt="">
-
-      <div>
-        <label for="">Name</label> <br>
-        <input type="text" id="UName"> <br>
-        <span id="NameVAl"></span>
+      <h3>Login</h3>
+      <div  onclick="closeMainlogin()" class="close-login">
+        <p>X</p>
       </div>
+      <div class="for_form">
+        <div>
+          <!-- <label for="">Name</label> <br> -->
+          <input type="text" id="UName" placeholder="Name"> <br>
+          <span id="NameVAl"></span>
+        </div>
 
-      <div>
-        <label for="">Password</label><br>
-        <input type="password" id="UPass"> <br>
-        <span id="PAssVAl"></span>
+        <div>
+          <!-- <label for="">Password</label><br> --> <br>
+          <input type="password" id="UPass" placeholder="Password"> <br>
+          <span id="PAssVAl"></span>
+        </div>
       </div>
 
       <div id="Sign-FLex">
@@ -222,18 +228,18 @@
           <span id="chkval"></span>
 
         </div>
-        <a href="">Forget Paswword</a>
-      </div onclick='closeFun()'> 
+    
+     
       <button onclick="logintoapp()" id="Signin_but">Signin</button>
-      <div>
-        <img class="cancel-but" src="https://img.freepik.com/free-icon/multiply_318-350486.jpg?size=626&ext=jpg" alt="">
-      </div>
-      <div>
-        <button id="NEW_USEBUT"><a href="../index1.html/Register.html">New User</a></button>
+      
+      <div class="forget_flex">
+        <button id="NEW_USEBUT"><a href="../index.html/Register.html">New User</a></button>
+        <a href="">Forget Paswword</a>
       </div>
     </div>
   </div>
-
+ 
+  </div>
 
 
 
@@ -269,6 +275,7 @@
         </div>
         <button onclick="closebutton()" id="cancel-but">X</button>
       </div>
+      
 
 
       <div class="name" onmouseover="WOMenbut()" onmouseleave="Womenleav()"><span class="span-one">WOMEN</span>

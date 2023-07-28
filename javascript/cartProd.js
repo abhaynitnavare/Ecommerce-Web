@@ -244,3 +244,20 @@ function deleteProd(id){
 
 
 }
+
+
+
+let CartSpan = document.getElementById('Cart-span')
+setInterval(() => {
+    localStg = localStorage.getItem('cart-list')
+    let type = typeof(localStg)
+    console.log(typeof(localStg))
+    if (type == "object") {
+        let len = 0
+        CartSpan.innerText = len
+    }
+    else {
+        let len = localStg.split(',').length
+        CartSpan.innerText = len
+    }
+}, 500)

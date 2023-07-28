@@ -9,26 +9,26 @@ function NameValidation() {
         valid.innerHTML = "*This field is required"
         return (0)
     }
-    else{
+    else{ 
         valid.innerHTML=""
         return 1
     }
     
 }
-function checkbtn(){
-    let chk = document.getElementById('chkvalue').checked
-    console.log(chk)
-    let valid = document.getElementById('chkval')
+// function checkbtn(){
+//     let chk = document.getElementById('chkvalue').checked
+//     console.log(chk)
+//     let valid = document.getElementById('chkval')
 
-    if(chk == false){
-        valid.innerHTML = "*This field is required"
-        return (0)
-    }
-    else{
-        valid.innerHTML = ''
-            return 1
-    }
-}
+//     if(chk == false){
+//         valid.innerHTML = "*This field is required"
+//         return (0)
+//     }
+//     else{
+//         valid.innerHTML = ''
+//             return 1
+//     }
+// }
 
 function passwdval() {
     let Password = document.getElementById('UPass').value
@@ -60,7 +60,7 @@ function logintoapp() {
     
 
     console.log(User, Password)
-    if(NameValidation() && passwdval() && checkbtn()){
+    if(NameValidation() && passwdval() ){
         if (localStorage.getItem(User)) {
             if (localStorage.getItem(User) == Password) {  
                 localStorage.setItem("User",User)
@@ -83,6 +83,10 @@ function logintoapp() {
         }
     }
 
+}
+
+function closeMainlogin(){
+    document.getElementById('Localform').style.display = 'none'
 }
 
 
