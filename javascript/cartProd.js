@@ -1,4 +1,4 @@
-let sneakes_Shoes = [
+let sneakesshos = [
     {
 
         "id": 1,
@@ -177,14 +177,14 @@ let sneakes_Shoes = [
 function newCart(){
     cartIdList = localStorage.getItem('cart-list').split(",")
 
-    console.log("Cart",cartIdList)
+    // console.log("Cart",cartIdList)
 
     newProdCartList = []
     // console.log("hiiiiii",newProdCartList)
 
     cartIdList.forEach((id)=>{
     console.log(id)
-    for(let ObjData of sneakes_Shoes){
+    for(let ObjData of sneakesshos){
         if(id == ObjData["id"]){
             newProdCartList.push(ObjData)
         }
@@ -193,7 +193,7 @@ function newCart(){
         }
     }
  })
- console.log(newProdCartList)
+//  console.log(newProdCartList)
 
  return newProdCartList
 }
@@ -205,12 +205,12 @@ function getProdList(){
  list =""
  for(let cartData of newProdCartList){
     list += `
-        <tr>
-            <td><img src=${cartData.img} ></td>
+        <tr class="tabelofjs">
+            <td><img class="forimgsize" src=${cartData.img} ></td>
             <td> <h2>${cartData.name}</h2> </td>
             <td> <h4> Price:${cartData.price}</h4> </td>
-            <td> <button> - </button> </td>
-            <td> <button> + </button> </td>
+            <td class="buttonminus"><butoon >-</butoon></td>
+            <td class="buttonminus"><butoon>+</butoon></td>
             <td> <button onclick='deleteProd(${cartData.id})'> <i class="fa-sharp fa-solid fa-trash"></i></button> </td>
         </tr>
     `
@@ -247,17 +247,17 @@ function deleteProd(id){
 
 
 
-let CartSpan = document.getElementById('Cart-span')
+let CartSpanmain = document.getElementById('Cart-span')
 setInterval(() => {
     localStg = localStorage.getItem('cart-list')
     let type = typeof(localStg)
-    console.log(typeof(localStg))
+    // console.log(typeof(localStg))
     if (type == "object") {
         let len = 0
-        CartSpan.innerText = len
+        CartSpanmain.innerText = len
     }
     else {
         let len = localStg.split(',').length
-        CartSpan.innerText = len
+        CartSpanmain.innerText = len
     }
 }, 500)

@@ -64,7 +64,7 @@ function logintoapp() {
         if (localStorage.getItem(User)) {
             if (localStorage.getItem(User) == Password) {  
                 localStorage.setItem("User",User)
-                location.assign('http://127.0.0.1:5501/index1.html/index.html')
+                location.assign('http://127.0.0.1:5502/index.html/index.html')
                 alert('Login sucessfull')
                 document.getElementById('hederimg').style.display='none'
             

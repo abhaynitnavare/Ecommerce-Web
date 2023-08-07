@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/FOTTER.CSS">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -163,8 +164,8 @@
       <ul class="header-li-three">Wishlist
       </ul>
       <ul id="Viewcartid" class="shopping">
-        <!-- <a onclick="cartbar()"> -->
-          <a href="./cart.html">
+        <a onclick="cartbar()">
+          <!-- <a href="./cart.html"> -->
           View Cart
           <span id="Cart-span">0</span>
         </a>
@@ -186,13 +187,21 @@
 
   <div id="blacbg" onclick="bggclose()"></div>
 
+
+
+  <!-- ////////////////////////////////For view Cart button////////// -->
   <div id="cartslide">
-    <p>View Cart</p>
+    <!-- <p>View Cart</p> -->
 
     <div onclick="closefun()" id="closis">
+      <p>My Cart</p>
 
       <button class="Clonfunct">X</button>
     </div>
+    
+    <table id="productList">
+
+    </table>
     <div class="paybutton">
       <div>Total</div>
       <div>PayNOw</div>
@@ -249,9 +258,9 @@
   <div id="After-Div">
 
     <div id="Main-ol">
+      <!-- <div class="name" id="one-bar" onclick="Show()"><span class="span-one">NEW</span> -->
       <!-- onmouseover="onname()" onmouseleave="leaveover()" -->
-      <div class="name" id="one-bar" onclick="Show()"><span class="span-one">
-          NEW</span>
+      <div class="name" id="one-bar" onmouseover="onname()" onmouseleave="leaveover()"><span class="span-one">NEW</span>
         <div id="First-id" class="First-li">
           <ul>
             <h6>Women</h6>
@@ -273,7 +282,7 @@
             <li>Show all</li>
           </ul>
         </div>
-        <button onclick="closebutton()" id="cancel-but">X</button>
+        <!-- <button onclick="closebutton()" id="cancel-but">X</button> -->
       </div>
       
 
@@ -495,6 +504,7 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="../javascript/login.js"></script>
+  <script src="../javascript/cartProd.js"></script>
 </body>
 
 </html>

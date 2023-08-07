@@ -1,4 +1,15 @@
+function onname(){
+    document.getElementById('First-id').style.display = 'flex'
+    document.getElementById('First-id').style.width = '90%'
+    document.getElementById('First-id').style.height = '25%'
+    document.getElementById('First-id').style.marginLeft = '5%'
+    document.getElementById("First-id").style.left = "0px"
+    document.getElementById("First-id").style.zIndex = '1'
 
+}
+function leaveover() {
+    document.getElementById('First-id').style.display = 'none'
+}
 
 function WOMenbut() {
     document.getElementById('Second-Id').style.display = 'flex'
@@ -86,39 +97,39 @@ function outfun() {
 
 
 
-let firstId = document.getElementById('First-id');
-let cancelbut = document.getElementById('cancel-but');
+// let firstId = document.getElementById('First-id');
+// let cancelbut = document.getElementById('cancel-but');
 
-firstId.style.display = "none"
-cancelbut.style.display = "none"
-function Show() {
-    console.log("Hello")
-    if (firstId.style.display == "none") {
-        firstId.style.display = "flex"
-        cancelbut.style.display = 'inline-block'
-    }
-    else {
-        firstId.style.display = "none"
-        cancelbut.style.display = "none"
-    }
-    // document.querySelector('#First-id').style.display='flex'
-    document.getElementById("First-id").style.width = '90%'
-    document.getElementById("First-id").style.height = '25%'
-    document.getElementById("First-id").style.marginLeft = '5%'
-    document.getElementById("First-id").style.zIndex = '1'
-    document.getElementById("First-id").style.left = "0px"
-}
-
-
+// firstId.style.display = "none"
+// cancelbut.style.display = "none"
+// function Show() {
+//     console.log("Hello")
+//     if (firstId.style.display == "none") {
+//         firstId.style.display = "flex"
+//         cancelbut.style.display = 'inline-block'
+//     }
+//     else {
+//         firstId.style.display = "none"
+//         cancelbut.style.display = "none"
+//     }
+//     // document.querySelector('#First-id').style.display='flex'
+//     document.getElementById("First-id").style.width = '90%'
+//     document.getElementById("First-id").style.height = '25%'
+//     document.getElementById("First-id").style.marginLeft = '5%'
+//     document.getElementById("First-id").style.zIndex = '1'
+//     document.getElementById("First-id").style.left = "0px"
+// }
 
 
-function closebutton() {
-    if (cancelbut.style.display == "none") {
-    }
-    else {
-        cancelbut.style.display = "none"
-    }
-}
+
+
+// function closebutton() {
+//     if (cancelbut.style.display == "none") {
+//     }
+//     else {
+//         cancelbut.style.display = "none"
+//     }
+// }
 
 
 
@@ -416,12 +427,14 @@ let backet = []
 let localStg = localStorage.getItem('cart-list')
 let type = typeof(localStg)
 
+// console.log(typeof(localStg))
 function addtoCart(val) {
-    console.log(type)
+    // console.log(type)
 
     if (type == "string") {
         backet.push(val)
         localStorage.setItem('cart-list', backet)
+        alert('Added')
     }
 
     else {
@@ -443,7 +456,7 @@ let CartSpan = document.getElementById('Cart-span')
 setInterval(() => {
     localStg = localStorage.getItem('cart-list')
     let type = typeof(localStg)
-    console.log(typeof(localStg))
+    // console.log(typeof(localStg))
     if (type == "object") {
         let len = 0
         CartSpan.innerText = len
@@ -455,6 +468,9 @@ setInterval(() => {
 }, 500)
 
 
+
+
+//   view cart button function  ///////
 
 
 
@@ -483,7 +499,7 @@ function cartbar() {
         CartBar.classList.add('tSlide')
         bgclose.style.display="block"
 
-        console.log('Done')
+        // console.log('Done')
         if (CartBar.className.includes('tSlide')) {
             console.log('task done')
         }
@@ -491,26 +507,19 @@ function cartbar() {
 }
 
 
-function closefun() {
-    console.log('Cliked')
-    if (CartBar.style.display = "none") {
-        console.log('display none')
-        bgclose.style.display="none"
 
+
+function closefun() {
+    // console.log('Cliked')
+    if (CartBar.style.display = "none") {
+        // console.log('display none')
+        bgclose.style.display="none"
     }
     else {
-       
         CartBar.style.display = 'none'
-       
-        
-        console.log('hiiiiiiiiii')
+        // console.log('hiiiiiiiiii')
     }
-    // CartBar.style.display=='none'
 }
-// cartbar()
-// closefun()
-
-
 
 
 
