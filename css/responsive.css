@@ -1,0 +1,276 @@
+@media (max-width: 1200px) {
+  #Main-ol {
+    width: 80%;
+  }
+  #ul-bar {
+    width: 70%;
+  }
+  #Lobo-bar {
+    width: 20%;
+  }
+  #div_images-footer img {
+    width: 60px;
+  }
+  #ul-bar .header-li-one h2{
+    display: none;
+    
+  }
+  .header-li-one a {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  #Main-ol {
+    width: 80%;
+  }
+  
+  #ul-bar {
+    width: 60%;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  #ul-bar ul {
+    font-size: 18px;
+  }
+  #Lobo-bar {
+    width: 40%;
+  }
+  #div_images-footer img {
+    width: 60px;
+  }
+  #container_img {
+    width: 45%;
+  }
+  #container_img div {
+    margin: 0px 15px 0px 5px;
+  }
+  #Shiping_img-div {
+    width: 85%;
+  }
+}
+
+@media (max-width: 950px) {
+  #div_images-footer {
+    width: 400px;
+  }
+  #ul-bar ul {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 850px) {
+  #Lobo-bar {
+    width: 50%;
+    font-size: 25px;
+  }
+  #Lobo-bar h1 {
+    /* width: 30%; */
+    font-size: 30px;
+  }
+  #Main-ol {
+    width: 90%;
+  }
+  #ul-bar {
+    width: 50%;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  #ul-bar ul {
+    padding-left: 0px;
+  }
+  #div_images-footer {
+    width: 350px;
+  }
+  #div_images-footer img {
+    width: 40px;
+  }
+  #container_img {
+    width: 55%;
+  }
+
+  .slide-size img {
+    height: 450px;
+  }
+  header #ul-bar {
+    display: flex;
+  }
+  
+}
+
+@media (max-width: 650px) {
+  #hMenu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  #Viewcartid {
+    width: 150px;
+  }
+  #Lobo-bar {
+    width: 50%;
+    display: flex;
+    text-align: start;
+  }
+  .slide-size img {
+    height: 400px;
+  }
+  #div_images-footer,
+  #container_img {
+    width: 100%;
+    /*  */
+    margin: auto;
+  }
+  #div_images-footer img {
+    width: 50px;
+  }
+  #Viewcartid  #Cart-span{
+    position: relative;
+    padding: 2px;
+    margin-left: 15px;
+  }
+  #Shiping_img-div img {
+    width: 50px;
+  }
+  #Shiping_img-div div {
+    width: 150px;
+    margin: 0px 10px 0px;
+  }
+  #Shiping_img-div {
+    width: 90%;
+  }
+  #ul-bar ul {
+    font-size: 18px;
+  }
+  
+
+  
+  #container {
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #After-Div {
+    display: none;
+  }
+  #cartslide {
+    width: 100%;
+  }
+  #Viewcartid div {
+    width: 100%;
+    text-align: center;
+  }
+  #Viewcartid :nth-child(1) {
+    margin-right: -160px;
+  }
+
+  .forimgsize {
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  .tabelofjs h2 {
+    font-size: 20px;
+   
+  }
+  .tabelofjs h4 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .butoondelat{
+    margin-left: 20px ;
+
+  }
+  #Shiping_img-div{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #container{
+    font-size: 15px;
+  }
+  #container_img{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #div_images-footer{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .forimgsize{
+    width: 130px;
+    margin-left: 50px;
+    height: 100px;
+  }
+
+  .tabelofjs h2{
+    font-size: 15px;
+    font-family: "poppins";
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .tabelofjs h4{
+    font-size: 15px;
+    font-family: "poppins";
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+  .tabelofjs td button{
+    padding: 12px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: none;
+    margin-top: 20px;
+    color: red;
+  }
+  .tabelofjs  .buttonminus{
+ 
+    padding: 8px;
+    padding-top: 25px;
+  }
+  .logoutBtnoon{
+    justify-content: center;
+    display: flex;
+  }
+ 
+}
+@media (max-width:500px) {
+  .slide img{
+    width: 100%;
+    height: 300px;
+  }
+  .icons{
+    font-weight: 200;
+  }
+  .conBar{
+    width: 25px;
+    height: 3px;
+
+  }
+  .forimgsize{
+    width: 80px;
+    height: 50px;
+    margin-left: 25px;
+  }
+}
+@media (max-width:400px){
+  .tabelofjs{
+    width: 320px;
+  }
+  .forimgsize{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+}

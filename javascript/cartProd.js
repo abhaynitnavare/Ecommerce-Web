@@ -209,18 +209,40 @@ function getProdList(){
             <td><img class="forimgsize" src=${cartData.img} ></td>
             <td> <h2>${cartData.name}</h2> </td>
             <td> <h4> Price:${cartData.price}</h4> </td>
-            <td class="buttonminus"><butoon >-</butoon></td>
-            <td class="buttonminus"><butoon>+</butoon></td>
-            <td> <button onclick='deleteProd(${cartData.id})'> <i class="fa-sharp fa-solid fa-trash"></i></button> </td>
+            <td class="buttonminus"><butoon onclick="IncreasePro()" ><h3>+</h3></butoon></td>
+            <td class="buttonminus"><butoon onclick="DecreasePro()" ><h3>-</h3></butoon></td>
+            <td class="butoondelat"> <button onclick='deleteProd(${cartData.id}), updateCartCount()' > <i class="fa-sharp fa-solid fa-trash"></i></button> </td>
         </tr>
     `
  }
 
  productList.innerHTML = list
+ updateTotalPrice()
 
 
 }
 getProdList()
+
+
+
+function updateTotalPrice() {
+    const newProdCartList = newCart();
+    let totalPrice = 0;
+  
+    for (const cartData of newProdCartList) {
+      totalPrice += cartData.price;
+    }
+  
+    const totalpriceElement = document.getElementById('totalprice');
+    totalpriceElement.innerHTML = `Total Price: $${totalPrice.toFixed(2)}`;
+  }
+
+
+
+
+
+
+
 
 
 function deleteProd(id){
@@ -229,35 +251,42 @@ function deleteProd(id){
     console.log("Hello",id,newProdList, newProdList)
     for(let i in newProdList){
         if(newProdList[i].id == id){
-            console.log(i)
+            console.log("deletid",i)
             let newData = newProdList.splice(i,1)
             console.log(newProdList)
         }
     }
+
+    // for (let i = 0; i < newProdList.length; i++) {
+    //     if (newProdList[i].id == id) {
+    //         console.log("deletid", i);
+    //         newProdList.splice(i, 1);
+    //         console.log(newProdList);
+    //         i--; // Decrement i to adjust for the removed element
+    //     }
+    // }
 
     for(let data of newProdList){
         delProList.push(data.id)
     }
     localStorage.setItem('cart-list',delProList )
 
-    location.reload()
-
-
+    getProdList()
 }
 
 
 
-let CartSpanmain = document.getElementById('Cart-span')
-setInterval(() => {
-    localStg = localStorage.getItem('cart-list')
-    let type = typeof(localStg)
-    // console.log(typeof(localStg))
-    if (type == "object") {
-        let len = 0
-        CartSpanmain.innerText = len
-    }
-    else {
-        let len = localStg.split(',').length
-        CartSpanmain.innerText = len
-    }
-}, 500)
+// let CartSpanmain = document.getElementById('Cart-span')
+// setInterval(() => {
+//     localStg = localStorage.getItem('cart-list')
+//     let type = typeof(localStg)
+//     // console.log(typeof(localStg))
+//     if (type == "object") {
+//         let len = 0
+//         CartSpanmain.innerText = len
+//     }
+//     else {
+//         let len = localStg.split(',').length
+//         CartSpanmain.innerText = len
+//     }
+// }, 500)

@@ -88,7 +88,6 @@ window.addEventListener('load', () => {
 function outfun() {
     localStorage.setItem("User", "")
     logIn.style.display = "block"
-    // Register.style.display="block"
     acDetails.style.display = "none"
     logOut.style.display = "none"
     acUser.innerHTML = ""
@@ -96,108 +95,99 @@ function outfun() {
 
 
 
-
-// let firstId = document.getElementById('First-id');
-// let cancelbut = document.getElementById('cancel-but');
-
-// firstId.style.display = "none"
-// cancelbut.style.display = "none"
-// function Show() {
-//     console.log("Hello")
-//     if (firstId.style.display == "none") {
-//         firstId.style.display = "flex"
-//         cancelbut.style.display = 'inline-block'
-//     }
-//     else {
-//         firstId.style.display = "none"
-//         cancelbut.style.display = "none"
-//     }
-//     // document.querySelector('#First-id').style.display='flex'
-//     document.getElementById("First-id").style.width = '90%'
-//     document.getElementById("First-id").style.height = '25%'
-//     document.getElementById("First-id").style.marginLeft = '5%'
-//     document.getElementById("First-id").style.zIndex = '1'
-//     document.getElementById("First-id").style.left = "0px"
-// }
-
-
-
-
-// function closebutton() {
-//     if (cancelbut.style.display == "none") {
-//     }
-//     else {
-//         cancelbut.style.display = "none"
-//     }
-// }
-
-
-
-
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//       document.getElementById("header").style.top = "0";
-//     } else {
-//       document.getElementById("header").style.top = "0px";
-//     }
-//   }
-
 // HamBurger Menu
 let hamMenu = document.querySelector('.hamburgerMenu');
 let conBar = document.getElementById('bar1');
+ let hmenu = document.getElementById('hMenu')
+ let ulmainbar = document.getElementById('ul-bar')
+ 
 
 function menu() {
-    let hmenu = document.getElementById('hMenu')
-    document.querySelector('#Main-ol').style.display = "none"
+   
+    
 
-    document.getElementById('ul-bar').style.display = "none"
+   
     if (!hmenu.className.includes('icons')) {
         document.getElementById('hMenu').classList.add('icons')
         document.getElementById('ul-bar').style.display = "flex"
         document.getElementById('ul-bar').classList.add('HamUlbar')
-        document.getElementById('ul-bar').style.width = '20%'
+        document.getElementById('ul-bar').style.width = '70%'
         document.getElementById('bgMenu').classList.add('hamBg')
         console.log('1')
+
+      
+        
     }
     else {
-        document.getElementById('hMenu').classList.remove('icons')
-        document.getElementById('ul-bar').style.display = "none"
-        document.getElementById('ul-bar').classList.remove('HamUlbar')
-        document.getElementById('bgMenu').classList.remove('hamBg')
-        // console.log('12')
-
+        // document.getElementById('hMenu').classList.remove('icons')
+        // document.getElementById('ul-bar').style.display = "none"
+        // document.getElementById('ul-bar').classList.remove('HamUlbar')
+        // document.getElementById('bgMenu').classList.remove('hamBg')
+        
+        if (window.innerWidth <= 650) { // Check window width before hiding the menu
+            document.getElementById('hMenu').classList.remove('icons');
+            document.getElementById('ul-bar').style.display = 'none';
+            document.getElementById('ul-bar').classList.remove('HamUlbar');
+            document.getElementById('bgMenu').classList.remove('hamBg');
+        }
+    
     }
 }
 
-// category
-function Category() {
-    let mandrp = document.getElementById('Main-ol')
-    // document.getElementById('manudrp').innerHTML
-    let manudrp = document.getElementById('manudrp')
 
-    console.log('clucked')
+window.addEventListener('load', () => {
+    // ... your existing code ...
 
-    if (document.querySelector('#Main-ol').style.display = "none") {
-        document.getElementById('Main-ol').classList.add('Mainol')
-        document.getElementById('Main-ol').style.display = 'flex'
-        document.getElementById('Main-ol').style.width = '20%'
+    // Check window width on page load
+    checkWindowWidth();
+});
 
+window.addEventListener('resize', () => {
+    // Check window width on window resize
+    checkWindowWidth();
+});
+
+function checkWindowWidth() {
+    if (window.innerWidth > 650) {
+        document.getElementById('hMenu').classList.remove('icons');
+        document.getElementById('ul-bar').style.display = 'flex';
+        document.getElementById('ul-bar').classList.remove('HamUlbar');
+        document.getElementById('bgMenu').classList.remove('hamBg');
+    } 
+    else if( (window.innerWidth < 650)){
+        ulmainbar.style.display="none"
     }
-    else {
-        document.querySelector('#Main-ol').style.display = "none"
-
-    }
-    // manudrp.innerHTML=mandrp.textContent
 }
+
+
+
+
+
+
+
+function closemenubag_round(){
+    document.getElementById('bgMenu').classList.remove('hamBg')
+    document.getElementById('hMenu').classList.remove('icons')
+    document.getElementById('ul-bar').style.display = "none"
+    document.getElementById('ul-bar').classList.remove('HamUlbar')
+}
+
+    
+
+
 
 function login() {
     modal.style.display = 'flex'
     console.log('hiii stop')
+    if (window.innerWidth <= 650) {
+        document.getElementById('hMenu').classList.remove('icons');
+        document.getElementById('ul-bar').style.display = 'none';
+        document.getElementById('ul-bar').classList.remove('HamUlbar');
+        document.getElementById('bgMenu').classList.remove('hamBg');
+    } }
 
-}
+
+
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = 'none'
@@ -429,43 +419,54 @@ let type = typeof(localStg)
 
 // console.log(typeof(localStg))
 function addtoCart(val) {
-    // console.log(type)
 
-    if (type == "string") {
-        backet.push(val)
-        localStorage.setItem('cart-list', backet)
-        alert('Added')
+
+    if(localStorage.getItem("User") == ""){
+         alert('Pls login first')
     }
-
     else {
-        backet = localStorage.getItem('cart-list').split(",")
-        console.log(backet)
-
-        if(backet.includes(String(val))){
-            alert('already exixt')
+        let localStore = localStorage.getItem('cart-list')
+       
+        console.log(val)
+        if(localStore == ""){
+            localStorage.setItem('cart-list', val)
         }
         else{
-            backet.push(val)
-            localStorage.setItem('cart-list', backet)
+            backet = localStorage.getItem('cart-list').split(",")
+            console.log("This is Backet Value",backet)
+    
+            if(backet.includes(String(val))){
+                alert('already exixt')
+            }
+            else{
+                backet.push(val)
+                localStorage.setItem('cart-list', backet)
+                console.log("This is Backet Value 2",backet)
+            }
         }
     }
-
+    updateCartCount()
 }
 
-let CartSpan = document.getElementById('Cart-span')
-setInterval(() => {
-    localStg = localStorage.getItem('cart-list')
-    let type = typeof(localStg)
-    // console.log(typeof(localStg))
-    if (type == "object") {
-        let len = 0
-        CartSpan.innerText = len
+let CartSpan = document.getElementById('Cart-span');
+updateCartCount();
+
+function updateCartCount() {
+    let localStg = localStorage.getItem('cart-list');
+    let cartItemCount = 0;
+    // console.log(typeof(localStg),cartItemCount)
+    if(localStg == ""){
+        cartItemCount = 0;
     }
     else {
-        let len = localStg.split(',').length
-        CartSpan.innerText = len
+        // console.log(typeof(localStg),cartItemCount)
+        cartItemCount = localStg.split(',').length;
+        // console.log(typeof(cartItemCount),"daar")/
     }
-}, 500)
+    CartSpan.innerText = cartItemCount;
+}
+
+
 
 
 
@@ -479,49 +480,46 @@ CartBar.style.display = 'none'
 let clbutton = document.getElementsByClassName('Clonfunct')
 // clbutton.style.display = 'none'
 let bgclose = document.getElementById('blacbg')
+
+
 bgclose.style.display ="none"
 function bggclose(){
+   
 
-    if(bgclose.style.display="block"){
+    if(bgclose.style.display="block"  ){
         bgclose.style.display="none"
-
+        CartBar.style.display='none'
     }
-    CartBar.style.display='none'
-    bgclose.style.display='none'
+    else{
+        CartBar.style.display='none'
+        bgclose.style.display="none"
+       
+    }
 }
 
 
 
 function cartbar() {
-
     if (CartBar.style.display = 'none') {
         CartBar.style.display = 'block'
-        CartBar.classList.add('tSlide')
         bgclose.style.display="block"
-
-        // console.log('Done')
-        if (CartBar.className.includes('tSlide')) {
-            console.log('task done')
-        }
+        console.log('yhis')
     }
+      
 }
 
 
-
-
 function closefun() {
-    // console.log('Cliked')
     if (CartBar.style.display = "none") {
-        // console.log('display none')
         bgclose.style.display="none"
     }
     else {
         CartBar.style.display = 'none'
-        // console.log('hiiiiiiiiii')
+        
     }
 }
 
 
-
+let Window_width = window.innerWidth
 
 

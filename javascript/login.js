@@ -68,7 +68,7 @@ function logintoapp() {
                 alert('Login sucessfull')
                 document.getElementById('hederimg').style.display='none'
             
-                
+                return  isLoggedIn;
             
 
 

@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/product.css">
   <link rel="stylesheet" href="../css/FOTTER.CSS">
+  <link rel="stylesheet" href="../css/responsive.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,152 +35,33 @@
         <a id="loginHide" onclick="login()">Login</a>
         <!-- href="../index1.html/login.html" -->
       </ul>
-      <!-- <ul class="Cat" onclick="Category()"> <a>Category</a>
-          
-        <li style="display: none;">
-          <ul>
-            <li class="name" id="one-bar" onclick="Show()">
-              <span class="span-one">NEW</span>
-              <ul>
-                  <li>
-                    <ul>
-                      <h6>Women</h6>
-                      <li>Shoes </li>
-                      <li>Bags </li>
-                      <li>Accessories </li>
-                      <li>Show all </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <h6>Men</h6>
-                      <li>Shoes</li>
-                      <li>Accessories</li>
-                      <li>Show all</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <h6>KIDS</h6>
-                      <li>Shoes</li>
-                      <li>Show all</li>
-                    </ul>
-                  </li>
-              </ul>
-            </li>
-          </ul>
-        </li> 
-
-        <li style="display: none;">
-          <ul>
-            <li class="name" onmouseover="WOMenbut()" onmouseleave="Womenleav()"><span class="span-one">WOMEN</span>>
-              <ul>
-                <li>
-                  <ul>
-                    <h6>SHOES</h6>
-                    <li>Causal shoes</li>
-                    <li>Chappals</li>
-                    <li>Flipflop</li>
-                    <li>Sandals</li>
-                    <li>Sports</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h6> HEEL TYPE</h6>
-                    <li>Block</li>
-                    <li>Cone</li>
-                    <li>Platform</li>
-                    <li>Show all</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h6>Bags</h6>
-                    <li>HandBags</li>
-                    <li>Wallet& Clutches</li>
-                    <li>Show all</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li style="display: none;">
-          <ul>
-            <li class="name" id="main_third" onmouseover="menbut()" onmouseleave="menleav()"> <span
-              class="span-one">MEN</span>>
-              <ul>
-                <li>
-                  <UL>
-                    <h6>SHOES</h6>
-                    <li>Causal shoes</li>
-                    <li>Chappals</li>
-                    <li>Flipflop</li>
-                    <li>Sandals</li>
-                    <li>Sports</li>
-                  </UL>
-                </li>
-                <li>
-                  <ul>
-                    <h6>Accessories</h6>
-                    <li>Bags</li>
-                    <li>Belts</li>
-                    <li>Show all</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li style="display: none;">
-          <ul>
-            <li class="name" onmouseover="Kidsbut()" onmouseleave="kidsleave()"> <span class="span-one">KIDS</span>>
-              <ul>
-                <li>
-                  <ul>
-                    <h6>FEATURED</h6>
-                    <li>New Arrivals</li>
-                    <li>Best Seller</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h6>SHOES</h6>
-                    <li>Boys</li>
-                    <li>Girls</li>
-                    <li>School</li>
-                    <li>Show all</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul> -->
+     
+      
       <ul class=" header-li-two"> <img src="" alt="">My Orders
       </ul>
       <ul class="header-li-three">Wishlist
       </ul>
       <ul id="Viewcartid" class="shopping">
-        <a onclick="cartbar()">
-          <!-- <a href="./cart.html"> -->
-          View Cart
-          <span id="Cart-span">0</span>
-        </a>
-      </ul>
+      
+        <div onclick="cartbar()" onmouseover="getProdList()"  >View Cart</div>
+        <span  id="Cart-span" >0</span>
+        
 
+      </ul>
+      
+
+      <div class="logoutBtnoon">
       <button id="logoutBtn" onclick="outfun()">Logout</button>
+
+      </div>
     </div>
 
-    <!-- <div id="bgMenu"> </div>
+    <div id="bgMenu" onclick="closemenubag_round()"> </div>
     <div class="hamburgerMenu" id="hMenu" onclick="menu()">
       <div class="conBar" id="bar1"></div>
       <div class="conBar" id="bar2"></div>
       <div class="conBar" id="bar3"></div>
-    </div> -->
+    </div>
 
 
 
@@ -203,14 +85,14 @@
 
     </table>
     <div class="paybutton">
-      <div>Total</div>
-      <div>PayNOw</div>
+      <div id="totalprice" >Total Price: 0.00</div>
+      <div id="PayNow"> Pay </div>
     </div>
   </div>
 
 
   <!-- login animation -->
-  <div class="Localform1" id="Localform">
+  <div   class="Localform1" id="Localform">
     <div id="logi_space" class="animate">
       <h3>Login</h3>
       <div  onclick="closeMainlogin()" class="close-login">
@@ -503,7 +385,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  <script src="../javascript/login.js"></script>
+  <script  src="../javascript/login.js"></script>
   <script src="../javascript/cartProd.js"></script>
 </body>
 

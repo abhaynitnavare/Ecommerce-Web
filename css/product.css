@@ -4,6 +4,7 @@
     justify-content: space-around;
     margin: auto;
 }
+
 .product{
     text-align: center;
     border: 2px solid black;
@@ -141,8 +142,14 @@
     color: rgb(255, 255, 254);
     border: none;
     font-size: 15px;
-    background-color: orangered;
+    background-color: #e63946;
+    box-shadow: 4px 4px 0 #d90429;
     margin-bottom: 10px;
+    transition: transform 0.2s , box-shadow 0.2s;
+}
+.Add_CART:active{
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0 0 0 #d90429;
 }
 
 .Scard h2:nth-child(2){
