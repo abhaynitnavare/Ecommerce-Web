@@ -455,13 +455,18 @@ function updateCartCount() {
     let localStg = localStorage.getItem('cart-list');
     let cartItemCount = 0;
     // console.log(typeof(localStg),cartItemCount)
-    if(localStg == ""){
-        cartItemCount = 0;
-    }
-    else {
-        // console.log(typeof(localStg),cartItemCount)
+    // if(localStg == ""){
+    //     cartItemCount = 0;
+    // }
+    // else {
+    //     // console.log(typeof(localStg),cartItemCount)
+    //     cartItemCount = localStg.split(',').length;
+    //     // console.log(typeof(cartItemCount),"daar")/
+    // }
+
+
+    if(localStg  !== null){
         cartItemCount = localStg.split(',').length;
-        // console.log(typeof(cartItemCount),"daar")/
     }
     CartSpan.innerText = cartItemCount;
 }

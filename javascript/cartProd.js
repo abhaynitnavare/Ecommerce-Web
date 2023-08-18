@@ -175,9 +175,16 @@ let sneakesshos = [
 ]
 
 function newCart(){
-    cartIdList = localStorage.getItem('cart-list').split(",")
-
+    // cartIdList = localStorage.getItem('cart-list').split(",")
     // console.log("Cart",cartIdList)
+
+    cartIdList = localStorage.getItem('cart-list')
+
+    if (cartIdList === null) {
+        cartIdList = []; // Initialize as an empty array
+    } else {
+        cartIdList = cartIdList.split(",");
+    }
 
     newProdCartList = []
     // console.log("hiiiiii",newProdCartList)
